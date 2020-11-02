@@ -4,15 +4,19 @@ layout: default
 
 ## Introduction
 
-<img src="assets/images/me.jpg" alt="Photo" hspace="20" width="30%" align="right"/> Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<img src="assets/images/me.jpg" alt="Photo" hspace="20" width="30%" align="right"/>
+My name is Sanna Porkka. I study linguistics in the University of Helsinki for the second year, and my focus is on language technology. My hobbies include painting, running and shooting with guns and bows.
+
 
 ## Find me on
 
-[LinkedIn](https://fi.linkedin.com/mouse-mousekewitz), [GitHub](https://github.com/mokewitz)
+[GitHub](https://github.com/porkkasanna)
+[Facebook](https://www.facebook.com/sanna.porkka.9/)
 
 ## Contact
 
-My email address is of the form first_name.last_name@helsinki.fi. 
+You can contact me by email:
+sanna.porkka@helsinki.fi 
 
 ## Courses I've Taken
 
