@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Find me on
 
 [GitHub](https://github.com/porkkasanna)

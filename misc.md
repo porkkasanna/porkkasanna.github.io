@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Miscellaneous
 
 [Tavastia Nation](https://hamalais-osakunta.fi/in-english)

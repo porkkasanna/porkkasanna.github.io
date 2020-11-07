@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Command line tools for linguistis -course
 
 Introduction to the course
