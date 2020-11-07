@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## My CV
+## Résumé
 
-You can find my CV [here](link).
+You can find my résumé [here](https://www.overleaf.com/read/njmvqjtqdgyt).
 
