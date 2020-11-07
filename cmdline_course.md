@@ -4,7 +4,7 @@ Introduction to the course
 
 ## Week 1
 
-This week...
+In the first week we started by learning how to set up a command line environment on our computers. We learned some of the basic commands (like "mv" to remove or rename files or rm to remove them) and how to navigate the directories and files on our computer using the command line (with the "cd" command). We went over how to use "emacs", the text editor. We installed "homebrew" and with that "wget".
 
 ## Week	2
 
