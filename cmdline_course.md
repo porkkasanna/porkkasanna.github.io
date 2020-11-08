@@ -49,7 +49,7 @@ work and how to kill a process with its PID (process ID). Then we learned how to
 
 Third week's most important thing was how to process text files. We learned the differences between different
 encoding systems, like ASCII and UTF-8. We learned about `grep` which helps to find certain parts of file
-by us giving specifications like with regex. For example `grep "\. The" file.txt` would find all the occurances
+by us giving specifications like with regex (regular expressions). For example `grep "\. The" file.txt` would find all the occurances
 of new sentences that start with "The" or other words that start that way, like "There". We learned about
 CSV (**c**omma-**s**eparated **v**alue) files, which are simple text files that have values separated with
 commas, and different programs can make tables out of them. It could look something like this:
@@ -76,7 +76,26 @@ count how many times they occur) and `sort` (sorts the contents in numerical or 
 
 ## Week	4
 
-This week...
+This week we moved onto more advanced corpus processing. We started by reading a bit about `sed` command,
+which has a lot of different things it can do. We didn't go through everything, but the most useful to us.
+You can for example remove or replace things in text files. An important thing we learned is how to
+manipulate a text file in a way that you can create a word frequency list. You can do it by runnig these
+commands:
+
+> cat file.txt | tr -s '\n\r\t' '\n' | tr -dc "[:alnum:]\n'" | sort | uniq -c | sort -nr 
+
+You can use pipes `|` to put a lot of commands in a row and do everything by once. `cat file.txt`
+is used to view the file, but here this is just used to determine that "file.txt" is the specific
+file that we want to modify. `tr -s '\n\r\t' '\n'` is used to replace all the different white spaces
+with newlines, so that there isn't useless space there. `tr -dc "[:alnum:]\n'"` is meant to delete
+all the punctuation. "-d" means delete and "-c" means that you want this command to delete everything
+but the things you specify. So there we specify, that we want to keep "[:alnum:]", which means all
+letters and numbers. We also want to keep newlines ("\n") and apostrophies ('). Then `sort` sorts
+everything to alphabetical order. `uniq -c` will then remove all the same occurances of words
+and count them with "-c". Lastly `sort -nr` will sort the words in a reverse numerical order,
+and that is how we get a frequency list. We also learned how to modify a file to a sentence
+per line format and how to list N-grams, like trigrams, so that a file has all the trigrams
+that the original file had.
 
 ***
 
