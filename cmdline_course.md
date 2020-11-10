@@ -106,18 +106,18 @@ so that you don't have to run them one by one. This is an example of a script:
 
 > #! /bin/bash
 >
-> if [ $# -ne 2 ]
-> then
->     echo "ERROR: Two command line arguments required!"
->     echo "$0 input_text_file output_freq_file"
->     exit 1
-> fi
-> cat $1 |
-> dos2unix |
-> tr -s "[:space:]" "\n" |
-> tr -d "[:punct:]" |
-> sort |
-> uniq -c |
+> if [ $# -ne 2 ]  
+> then  
+>     echo "ERROR: Two command line arguments required!"  
+>     echo "$0 input_text_file output_freq_file"  
+>     exit 1  
+> fi  
+> cat $1 |  
+> dos2unix |  
+> tr -s "[:space:]" "\n" |  
+> tr -d "[:punct:]" |  
+> sort |  
+> uniq -c |  
 > sort -nr > $2
 
 This does the same kind of a thing as the last week's example command, so this makes
@@ -154,15 +154,15 @@ makefile:
 
 > all: say_hello generate
 >
-> say_hello:
->         @echo "Hello World"
+> say_hello:  
+>         @echo "Hello World"  
 >
-> generate:
->         @echo "Creating empty text files..."
->         touch file-{1..10}.txt
+> generate:  
+>         @echo "Creating empty text files..."  
+>         touch file-{1..10}.txt  
 >
-> clean:
->         @echo "Cleaning up..."
+> clean:  
+>         @echo "Cleaning up..."  
 >         rm *.txt
 
 `all: say_hello generate` means that when you do a command `make all` it does what this
