@@ -82,7 +82,7 @@ You can for example remove or replace things in text files. An important thing w
 manipulate a text file in a way that you can create a word frequency list. You can do it by runnig these
 commands:
 
-> cat file.txt | tr -s '\n\r\t' '\n' | tr -dc "[:alnum:]\n'" | sort | uniq -c | sort -nr 
+> cat file.txt \| tr -s '\n\r\t' '\n' \| tr -dc "[:alnum:]\n'" \| sort \| uniq -c \| sort -nr 
 
 You can use pipes `|` to put a lot of commands in a row and do everything by once. `cat file.txt`
 is used to view the file, but here this is just used to determine that "file.txt" is the specific
