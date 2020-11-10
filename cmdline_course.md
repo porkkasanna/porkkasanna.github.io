@@ -101,7 +101,41 @@ that the original file had.
 
 ## Week	5
 
-This week...
+Scripts were week 5's topic. Scripts can be written to run many commands at the same time,
+so that you don't have to run them one by one. This is an example of a script:
+
+> #! /bin/bash
+>
+> if [ $# -ne 2 ]
+> then
+>     echo "ERROR: Two command line arguments required!"
+>     echo "$0 input_text_file output_freq_file"
+>     exit 1
+> fi
+> cat $1 |
+> dos2unix |
+> tr -s "[:space:]" "\n" |
+> tr -d "[:punct:]" |
+> sort |
+> uniq -c |
+> sort -nr > $2
+
+This does the same kind of a thing as the last week's example command, so this makes
+a frequency list. `#! /bin/bash` shows the path to the intepreter that inteprets the
+rest of the commands on the script. `if [ $# -ne 2 ]` means that if there are not two
+variables when using the script, it should echo an error and then exit. But if the two
+variables required are given, it goes to the actual commands. `dos2unix` makes the file
+to be unix-type. The other commands are explained in the last week's section. `> $2`
+defines that the results should be saved as a new file that is given when you run the script.
+
+We also learned how to modify our configuration files. For example we learned how to add
+more to our $PATHs, like adding a path so that we can easily use our new scripts.
+We learned what are environmental variables, and that you can use them as long as you
+are using the same environment. So every time you close your terminal, those variables
+disappear, but you can set new variables. You can also make the variables permanent by
+adding them to your configuration file. You can also make aliases for your most used
+commands. If you for example use the `clear` command a lot, you could set an alias
+for it, for example "c", and then just by typing "c" you can use the `clear` command.
 
 ***
 
