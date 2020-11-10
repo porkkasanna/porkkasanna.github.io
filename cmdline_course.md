@@ -8,7 +8,7 @@ Introduction to the course
 
 ***
 
-## Week 1
+## Week 1: Introduction to Command Line Environment
 
 In the first week we started by learning how to set up a command line environment on our computers.
 We learned some of the basic commands (like `mv` to move or rename files or `rm` to remove them) and how
@@ -19,7 +19,7 @@ This week's material was of course quite basic and just an introduction, so ther
 
 ***
 
-## Week	2
+## Week	2: Navigating the UNIX System
 
 The second week brought us more general information about how to use UNIX systems. We visited the root
 directory on our systems. We learned how to modify the permissions of files. Files have read, write and
@@ -45,7 +45,7 @@ work and how to kill a process with its PID (process ID). Then we learned how to
 
 ***
 
-## Week	3
+## Week	3: Basic Corpus Processing
 
 Third week's most important thing was how to process text files. We learned the differences between different
 encoding systems, like ASCII and UTF-8. We learned about `grep` which helps to find certain parts of file
@@ -74,7 +74,7 @@ count how many times they occur) and `sort` (sorts the contents in numerical or 
 
 ***
 
-## Week	4
+## Week	4: Advanced Corpus Processing
 
 This week we moved onto more advanced corpus processing. We started by reading a bit about `sed` command,
 which has a lot of different things it can do. We didn't go through everything, but the most useful to us.
@@ -99,7 +99,7 @@ that the original file had.
 
 ***
 
-## Week	5
+## Week	5: Scripting and Configuration Files
 
 Scripts were week 5's topic. Scripts can be written to run many commands at the same time,
 so that you don't have to run them one by one. This is an example of a script:
@@ -139,12 +139,39 @@ for it, for example "c", and then just by typing "c" you can use the `clear` com
 
 ***
 
-## Week	6
+## Week	6: Installing and Running Programs
 
-This week...
+This week's focus was on installing and running programs. We learned how to use the `sudo`
+command. With it you don't have to use the root password, just your user password. With
+`sudo` you can execute commands as root. We learned how to use package managers to
+install programs. Because I have a Mac, I use homebrew. With homebrew it is very easy
+to install programs and it always updates itself when you use it. We learned about pip,
+which is a package manager for python. You can install programs with it with simple
+command: `pip install <program name>`
+
+Another important subject that we learned about was makefiles. This is a very simple
+makefile:
+
+> all: say_hello generate
+>
+> say_hello:
+>         @echo "Hello World"
+>
+> generate:
+>         @echo "Creating empty text files..."
+>         touch file-{1..10}.txt
+>
+> clean:
+>         @echo "Cleaning up..."
+>         rm *.txt
+
+`all: say_hello generate` means that when you do a command `make all` it does what this
+command says, so "say_hello" and "generate". `say_hello` echos "Hello World". `generate`
+creates 10 empty files (file-{1..10}. Then when you do a command `make clear`, it echos
+"Cleaning up..." and removes all the files that are in the directory.
 
 ***
 
-## Week	7
+## Week	7: Version Control
 
 This week...
