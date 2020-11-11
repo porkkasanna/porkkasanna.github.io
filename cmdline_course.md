@@ -4,7 +4,10 @@ layout: default
 
 ## Command line tools for linguistis -course
 
-Introduction to the course
+This course teaches us how to use our computers with UNIX system for more streamlined work.
+It shows us the basic commands of how to navigate and use (in my case, because I have a mac) terminal, how to
+set up directories and projects and of course since this is specifically meant for linguists,
+how to do some basic corpus processing.
 
 ***
 
@@ -15,7 +18,7 @@ We learned some of the basic commands (like `mv` to move or rename files or `rm`
 to navigate the directories and files on our computer using the command line (with the `cd` command).
 We went over how to use a text editor called "emacs". We installed "homebrew" and with that "wget". 
 
-This week's material was of course quite basic and just an introduction, so there isn't that much more.
+This week's material was of course quite basic and just an introduction, so I found these quite easy.
 
 ***
 
@@ -42,6 +45,9 @@ to give someone all the permissions, you add it up to 7.
 
 This week we also learned how to compress files using `gzip` and `tar`. Another important thing was how processes
 work and how to kill a process with its PID (process ID). Then we learned how to use remote servers like Puhti.
+
+This week's material was still quite simple, so I didn't find them too hard to do. It was slightly harder,
+but definitely doable.
 
 ***
 
@@ -72,6 +78,9 @@ We learned some more commands like `tr` (can be used to replace something from t
 for example all the commas, and make them in to for example tabs), `uniq` (removes repeated lines and can
 count how many times they occur) and `sort` (sorts the contents in numerical or alphabetical order).
 
+This week's stuff was already a bit harder. I was mostly able to do the tasks, but had some difficulties
+too.
+
 ***
 
 ## Week	4: Advanced Corpus Processing
@@ -96,6 +105,9 @@ and count them with "-c". Lastly `sort -nr` will sort the words in a reverse num
 and that is how we get a frequency list. We also learned how to modify a file to a sentence
 per line format and how to list N-grams, like trigrams, so that a file has all the trigrams
 that the original file had.
+
+This week was very interesting, because I have previously used a program that makes me the frequency
+list, but it was actually quite simple to do it with just the command line.
 
 ***
 
@@ -137,6 +149,10 @@ adding them to your configuration file. You can also make aliases for your most 
 commands. If you for example use the `clear` command a lot, you could set an alias
 for it, for example "c", and then just by typing "c" you can use the `clear` command.
 
+I found scripts quite hard. I understand the basic way it works, but the actual code
+I was supposed to write so that the script works was quite difficult for me to
+understand.
+
 ***
 
 ## Week	6: Installing and Running Programs
@@ -170,6 +186,10 @@ command says, so "say_hello" and "generate". `say_hello` echos "Hello World". `g
 creates 10 empty files (file-{1..10}. Then when you do a command `make clear`, it echos
 "Cleaning up..." and removes all the files that are in the directory.
 
+Week 6 felt a bit easier and more understandable that week 5. Installing was pretty
+straight forward, and makefiles took a little bit of time to completely understand,
+but it wasn't too difficult.
+
 ***
 
 ## Week	7: Version Control
@@ -190,17 +210,21 @@ You can also add branches, where you can maybe try something that you're not sur
 you will want to keep, and don't want to disturb the project in case the thing you
 want to try doesn't work out the way you hoped. This is how you go about it:
 
-`git branch` - With this you can see what branches you already have. The main branch is
+* `git branch` - With this you can see what branches you already have. The main branch is
 called "master". The branch you're on is marked with a star (*).
 
-`git branch <branchname>` - This is how you create a new branch.
+* `git branch <branchname>` - This is how you create a new branch.
 
-`git checkout <branchname>` - When you want to change the branch you're on, you "chekcout"
+* `git checkout <branchname>` - When you want to change the branch you're on, you "chekcout"
 to it. Now you can work on your experiment.
 
-`git merge <branchname>` - When you are sure you want to unify the branches, you can
+* `git merge <branchname>` - When you are sure you want to unify the branches, you can
 do it with this command. Make sure you are on the branch that you want the experimental
 branch to connect to, so in a normal case probably the master branch.
 
-`git branch -d <branchname>` - Now that you have merged the branches, you can delete
+* `git branch -d <branchname>` - Now that you have merged the branches, you can delete
 the experimental branch with the "-d" option.
+
+Git seems like a very useful tool, and pretty simple to use too. I didn't feel too
+much difficulty learning to use it. I feel like it is something that I really
+can use in the future projects.
