@@ -116,21 +116,7 @@ list, but it was actually quite simple to do it with just the command line.
 Scripts were week 5's topic. Scripts can be written to run many commands at the same time,
 so that you don't have to run them one by one. This is an example of a script:
 
-> #! /bin/bash
->
-> if [ $# -ne 2 ]  
-> then  
->     echo "ERROR: Two command line arguments required!"  
->     echo "$0 input_text_file output_freq_file"  
->     exit 1  
-> fi  
-> cat $1 |  
-> dos2unix |  
-> tr -s "[:space:]" "\n" |  
-> tr -d "[:punct:]" |  
-> sort |  
-> uniq -c |  
-> sort -nr > $2
+![A script](assets/images/pic1.png)
 
 This does the same kind of a thing as the last week's example command, so this makes
 a frequency list. `#! /bin/bash` shows the path to the intepreter that inteprets the
