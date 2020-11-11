@@ -174,4 +174,33 @@ creates 10 empty files (file-{1..10}. Then when you do a command `make clear`, i
 
 ## Week	7: Version Control
 
-This week...
+This week we learned about git and version control. We first created accounts for
+ourselves on GitHub. Then we learned how to set up a git repository. With git you
+can save different versions of your project, so that if you noticed that you made
+a mistake changing something you made earlier, you can possibly recover the old
+data. With git there are a couple of ways to save things. When you just work with
+for example a text file, you save it normally on your computer. Then you `git add`
+it and then `git commit` it, and that is now one new version. When you have committed
+the changes, you can then `git push` it to a remote repository you have. This
+website is made with GitHub, so I have my remote repository there, and before any
+changes are seen on the website, I have to first `git push` them, and then they
+are on my website.
+
+You can also add branches, where you can maybe try something that you're not sure
+you will want to keep, and don't want to disturb the project in case the thing you
+want to try doesn't work out the way you hoped. This is how you go about it:
+
+`git branch` - With this you can see what branches you already have. The main branch is
+called "master". The branch you're on is marked with a star (*).
+
+`git branch <branchname>` - This is how you create a new branch.
+
+`git checkout <branchname>` - When you want to change the branch you're on, you "chekcout"
+to it. Now you can work on your experiment.
+
+`git merge <branchname>` - When you are sure you want to unify the branches, you can
+do it with this command. Make sure you are on the branch that you want the experimental
+branch to connect to, so in a normal case probably the master branch.
+
+`git branch -d <branchname>` - Now that you have merged the branches, you can delete
+the experimental branch with the "-d" option.
